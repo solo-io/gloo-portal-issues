@@ -10,13 +10,13 @@ jobs:
     name: Add Gloo OSS issue to Gloo Edge or Docs project board
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@main
+      - uses: actions/add-to-project@215051e586660a19c6c19f088743beaf1f9635f6 # main
         with:
           project-url: https://github.com/orgs/solo-io/projects/22
           github-token: ${{ secrets.ORG_CROSS_REPO }}
           labeled: "Type: Enhancement", "Type: Bug"
           label-operator: OR
-      - uses: actions/add-to-project@main
+      - uses: actions/add-to-project@215051e586660a19c6c19f088743beaf1f9635f6 # main
         with:
           project-url: https://github.com/orgs/solo-io/projects/24
           github-token: ${{ secrets.ORG_CROSS_REPO }}
